@@ -63,6 +63,12 @@ public class Restaurant {
         return name;
     }
 
-
+public int totalOrderValue(List<Item>items) {
+        int totalValue =0;
+        for(Item ls: items) {
+            totalValue+=ls.getPrice();
+        }
+        return totalValue;
+}
 
 }
